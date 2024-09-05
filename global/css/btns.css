@@ -1,0 +1,197 @@
+:root {
+  --cor-monster-green: #c3f25c;
+  --cor-black-style: #0c0d0a;
+  --cor-fundo: #f2f0eb;
+}
+
+.btn {
+  background-color: var(--cor-monster-green);
+  width: 150px;
+  color: var(--cor-black-style);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: 500ms;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--cor-black-style);
+  color: var(--cor-monster-green);
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: 800ms;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/*  */
+
+.btn-hero {
+  width: 200px;
+  height: 60px;
+  background-color: var(--cor-monster-green);
+
+  color: var(--cor-black-style);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 500ms;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-hero a {
+  color: var(--cor-black-style);
+  transition: 800ms;
+}
+
+.btn-hero:hover {
+  background-color: var(--cor-black-style);
+  color: var(--cor-monster-green);
+  animation: scaleButton 0.8s alternate infinite;
+  transition: 600ms;
+}
+
+.btn-hero:hover > a {
+  transition: 800ms;
+  color: var(--cor-monster-green);
+}
+
+.btn-hero:active {
+  transform: scale(0.98);
+}
+
+/*  */
+
+.btn-service {
+  background-color: var(--cor-monster-green);
+  width: 150px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: 500ms;
+}
+
+.btn-service:hover {
+  transform: scale(1.01);
+  transition: 500ms;
+}
+
+.btn-service:active {
+  transform: scale(0.98);
+}
+/*  */
+
+.btn-service {
+  background-color: var(--cor-monster-green);
+  width: 150px;
+  color: var(--cor-black-style);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: 500ms;
+  font-weight: bolder;
+}
+
+.btn-service:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.btn-service:active {
+  transform: scale(0.98);
+}
+
+/*  */
+
+.btn-projects {
+  background-color: var(--cor-black-style);
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+  color: var(--cor-fundo);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: 800ms;
+  font-weight: bold;
+}
+
+.btn-projects:hover {
+  background-color: var(--cor-monster-green);
+  transform: scale(1.1);
+  transition: 800ms;
+  animation: scaleButton 0.8s alternate infinite;
+
+  color: var(--cor-black-style);
+  font-weight: bold;
+  animation: scaleButton 0.8s alternate infinite;
+  transition: 600ms;
+}
+
+.btn-projects:active {
+  transform: scale(0.98);
+}
+
+/*  */
+
+.submit-button {
+  background-color: var(--cor-monster-green);
+  color: var(--cor-black-style);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 500px;
+  height: 70px;
+}
+
+.submit-button:hover {
+  transform: scale(1.01);
+  background-color: var(--cor-black-style);
+  color: var(--cor-monster-green);
+  transition: 400ms;
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+/*  */
+
+.btn-call {
+  background-color: var(--cor-fundo);
+  color: var(--cor-black-style);
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: 800ms;
+  font-weight: bolder;
+}
+
+.btn-call:hover {
+  transform: scale(1.1);
+  transition: 800ms;
+  background-color: var(--cor-monster-green);
+  color: var(--cor-black-style);
+}
+
+.btn-call:active {
+  transform: scale(0.98);
+}

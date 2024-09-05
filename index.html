@@ -4,42 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bryan - Desenvolvedor Web</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./global/css/btns.css" />
+    <link rel="stylesheet" href="./global/css/style.css" />
+    <link rel="stylesheet" href="./global/css/animation.css"" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
 
-    <script src="script.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script src="./global/js/emailJs.js" defer></script>
+    <script src="./global/js/modal.js" defer></script>
   </head>
   <body>
-    <header class="container">
-      <div class="logo">
-        <i class="ph ph-sword"></i>
-      </div>
+    <header>
+      <div class="header container">
+        <div class="logo">
+          <i class="ph ph-rocket-launch"></i>
+        </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section class="hero container">
+    <section id="home" class="hero container">
       <div class="hero-content">
         <h1>Olá, eu sou Bryan</h1>
-        <h2>Desenvolvedor Web</h2>
+        <h2>Desenvolvedor Web Fullstack</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
+          Olá, eu sou um Desenvolvedor Web Fullstack Junior com experiência em
+          JavaScript, HTML e CSS, além de habilidades em Node, Express e MVC.
+          Também possuo conhecimentos em MySQL para desenvolvimento de
+          aplicações web completas e funcionais.
         </p>
 
-        <button class="btn">Sobre Mim</button>
+        <div class="hero-box">
+          <button class="btn-hero"><a href="#contact">Fale comigo</a></button>
+
+          <button id="downloadBtn" class="btn-hero">
+            <a href="./global/doc/cv-atualizado.pdf" download="">Dowload CV</a>
+          </button>
+        </div>
       </div>
-      <div class="hero-image">
-        <img src="./assets/img/foto-bryan-removebg-preview.png" alt="Foto de Bryan" />
+      <div class="hero-image animation=bordas">
+        <img
+          src="./assets/img/delicia-removebg-preview.png"
+          alt="Foto de Bryan"
+        />
       </div>
     </section>
 
@@ -47,64 +78,180 @@
 
     <section class="services container">
       <div class="service-item">
-        <img src="ui-design.png" alt="Ícone UI Design" />
+        <i class="ph ph-figma-logo"></i>
+
         <h3>UI Design</h3>
-        <p>
-          Lorem ipsum é simplesmente o texto fictício da indústria de impressão
-          e composição tipográfica.
-        </p>
 
         <button class="btn-service">Saiba Mais</button>
+
+        <dialog class="modal-1">
+          <div>
+            <h1>UI Design</h1>
+
+            <p>
+              Tenho 2 anos de experiência adquirida durantes cursos e projetos
+              práticos.
+            </p>
+          </div>
+
+          <div class="box-modal">
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Interface do Usuário</p>
+            </div>
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Design</p>
+            </div>
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Paginas Webs</p>
+            </div>
+
+            <button class="modal-close"><i class="ph ph-x"></i></button>
+          </div>
+        </dialog>
       </div>
       <div class="service-item">
-        <img src="product-design.png" alt="Ícone Product Design" />
+        <i class="ph ph-layout"></i>
         <h3>Product Design</h3>
-        <p>
-          Lorem ipsum é simplesmente o texto fictício da indústria de impressão
-          e composição tipográfica.
-        </p>
 
         <button class="btn-service">Saiba Mais</button>
+        <dialog class="modal-1">
+          <div>
+            <h1>Product Design</h1>
+
+            <p>
+              Tenho 2 anos de experiência adquirida durantes cursos e projetos
+              práticos.
+            </p>
+          </div>
+
+          <div class="box-modal">
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Interface do Usuário</p>
+            </div>
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Design</p>
+            </div>
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Paginas Webs</p>
+            </div>
+
+            <button class="modal-close"><i class="ph ph-x"></i></button>
+          </div>
+        </dialog>
       </div>
       <div class="service-item">
-        <img src="branding.png" alt="Ícone Branding" />
-        <h3>Branding</h3>
-        <p>
-          Lorem ipsum é simplesmente o texto fictício da indústria de impressão
-          e composição tipográfica.
-        </p>
+        <i class="ph ph-browser"></i>
+        <h3>Web Systems</h3>
 
         <button class="btn-service">Saiba Mais</button>
+        <dialog class="modal-1">
+          <div>
+            <h1>Web Systems</h1>
+
+            <p>
+              Tenho 2 anos de experiência adquirida durantes cursos e projetos
+              práticos.
+            </p>
+          </div>
+
+          <div class="box-modal">
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Interface do Usuário</p>
+            </div>
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Design</p>
+            </div>
+            <div>
+              <i class="ph ph-check-circle"></i>
+              <p>Desenvolvimento de Paginas Webs</p>
+            </div>
+
+            <button class="modal-close"><i class="ph ph-x"></i></button>
+          </div>
+        </dialog>
       </div>
     </section>
 
     <section class="experience container">
       <div class="experience-item grid-item-1">
-        <h2>12</h2>
-        <h3>Anos de Experiência</h3>
+        <h2>Nivel Técnico</h2>
+        <i class="ph ph-code"></i>
       </div>
 
       <div class="template-grid-experiencie">
         <div class="experience-item grid-item-2">
-          <h2>60+</h2>
-          <h3>Clientes</h3>
+          <h2>HTML</h2>
+          <h3>Interdiario</h3>
         </div>
         <div class="experience-item grid-item-2">
-          <h2>08</h2>
-          <h3>Anos de Experiência</h3>
+          <h2>CSS</h2>
+          <h3>Interdiario</h3>
         </div>
         <div class="experience-item grid-item-2">
-          <h2>122+</h2>
-          <h3>Projetos Concluídos</h3>
+          <h2>JavaScript</h2>
+          <h3>Interdiario</h3>
         </div>
         <div class="experience-item grid-item-2">
-          <h2>10</h2>
-          <h3>Conquistas</h3>
+          <h2>React</h2>
+          <h3>Basico</h3>
+        </div>
+        <div class="experience-item grid-item-2">
+          <h2>Node.js</h2>
+          <h3>Interdiario</h3>
+        </div>
+        <div class="experience-item grid-item-2">
+          <h2>Banco de Dados</h2>
+          <h3>Basico</h3>
         </div>
       </div>
     </section>
 
-    <section class="projects container">
+    <section id="about" class="about container">
+      <div class="about-content">
+        <h2>Sobre</h2>
+        <p>
+          Bem-vindo! Sou Bryan, um Desenvolvedor Fullstack Júnior com uma paixão
+          por transformar ideias em soluções digitais funcionais e elegantes.
+          Com experiência em JavaScript, HTML, CSS, além de Node, Express e
+          arquitetura MVC, desenvolvo aplicações web completas que atendem às
+          necessidades modernas.
+        </p>
+
+        <p>
+          Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e
+          conclui um Curso Técnico Intensivo em Desenvolvimento Web Full Stack,
+          o que reforça meu compromisso com a excelência e a aprendizagem
+          contínua.
+        </p>
+
+        <p>
+          Minha trajetória profissional inclui experiências enriquecedoras como
+          Supervisor de Operações Jr. e Auxiliar Administrativo Jr., onde
+          aprimorei minhas habilidades em gestão de equipes, suporte operacional
+          e atendimento ao cliente. Essa bagagem me permite abordar o
+          desenvolvimento de software com uma visão estratégica e orientada para
+          resultados.
+        </p>
+
+        Estou entusiasmado para aplicar meu conhecimento técnico em novos
+        desafios, reconhecendo a crescente demanda por profissionais
+        qualificados na área de tecnologia. Estou determinado a fazer a
+        diferença e contribuir para o sucesso dos projetos em que estou
+        envolvido.
+      </div>
+
+      <img src="./assets/img/user.jpg" alt="" />
+    </section>
+
+    <section id="projects" class="projects container">
       <div class="projects-header">
         <div class="projects-title">
           <h2>Projetos em Destaque</h2>
@@ -184,63 +331,128 @@
 
     <div class="bg-2-template-grid"></div>
 
+    <section id="contact" class="call-to-action container">
+      <div class="title-contact">
+        <h1>Entre em Contato</h1>
 
-    <section class="call-to-action container">
-      <div class="call-to-title">
-        <h2>Vamos trabalhar juntos no seu próximo projeto</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
-        </p>
+        <h2>Meus Contatos</h2>
       </div>
 
-      <div>
-        <button class="btn">Contato</button>
+      <div class="contact-box">
+        <div class="contact-info">
+          <div class="contact-item email-style">
+            <i class="ph ph-envelope"></i>
+            <span>Email</span>
+            <a>bryanabranches@gmail.com</a>
+          </div>
+
+          <span class="span-info">
+            <a
+              href="mailto:bryanabranches@gmail.com
+            "
+              class="contact-info-link"
+              >Escreva me
+            </a>
+            <i class="ph ph-caret-double-right"></i>
+          </span>
+
+          <div class="contact-item whats-app-style">
+            <i class="ph ph-whatsapp-logo"></i>
+            <h3>Whatsapp</h3>
+            <p>+55 11 97848-6210</p>
+          </div>
+          <div class="contact-item discord-style">
+            <i class="ph ph-discord-logo"></i>
+
+            <h3>Discord</h3>
+            <p>bryanabranches</p>
+          </div>
+        </div>
+
+        <form id="contact-form" action="#" method="post">
+          <div class="form-title">
+            <h2>Mensagem</h2>
+          </div>
+
+          <div class="form-group">
+            <label for="user-name">Nome</label>
+            <input
+              type="text"
+              id="user-name"
+              name="user_name"
+              placeholder="Seu nome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="user-email">Email</label>
+            <input
+              type="email"
+              id="user-email"
+              name="user_email"
+              placeholder="Seu email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+          </div>
+
+          <div class="box-btn-form">
+            <button type="submit" class="submit-button">Enviar Mensagem</button>
+          </div>
+        </form>
       </div>
     </section>
 
-    <footer class="container footer">
-      <div class="footer-content">
-    
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-
-
-
-      <div class="footer-social-midia">
-        <div class="logo">
-          <i class="ph ph-sword"></i>
+    <footer>
+      <div class="container footer">
+        <div class="footer-content">
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
         </div>
-  
+
+        <div class="footer-social-midia">
+          <div class="logo">
+            <i class="ph ph-rocket-launch"></i>
+          </div>
+
           <div class="social-media">
-            
-            <nav>
-              <ul>
-                <li><a href="#" target="_blank"><i class="ph ph-linkedin-logo"></i></a></li>
-                <li><a href="#" target="_blank"><i class="ph ph-github-logo"></i></a></li>
-                <li><a href="#" target="_blank"><i class="ph ph-instagram-logo"></i></a></li>
-              
-              </ul>
-            </nav>
+            <a
+              href="https://www.linkedin.com/in/bryan-abranches/"
+              target="_blank"
+            >
+              <i class="ph ph-linkedin-logo"></i
+            ></a>
+
+            <a href="https://github.com/Bryan-Abranches" target="_blank"
+              ><i class="ph ph-github-logo"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/bryanabranches.jsx/"
+              target="_blank"
+              ><i class="ph ph-instagram-logo"></i
+            ></a>
           </div>
-  
+
           <div class="copyright">
-            <i class="ph ph-copyright"></i><p>  Criado por Bryan</p>
+            <i class="ph ph-copyright"></i>
+            <p>Criado por Bryan Abranches</p>
           </div>
-          
-
-
-      </div>
-      
- 
+        </div>
       </div>
     </footer>
   </body>
