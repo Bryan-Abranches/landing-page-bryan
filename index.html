@@ -27,6 +27,7 @@
 
     <script src="./global/js/emailJs.js" defer></script>
     <script src="./global/js/modal.js" defer></script>
+    <script src="./global/js/menuMobile.js" defer></script>
   </head>
   <body>
     <header>
@@ -35,15 +36,31 @@
           <i class="ph ph-rocket-launch"></i>
         </div>
 
-        <nav>
+        <div>
+          <nav class="nav-list">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-mobile">
+          <button onclick="menuShow()" id=""><i class="ph ph-list"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-mobile">
+        <div class="nav-mobile-open">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <section id="home" class="hero container">
