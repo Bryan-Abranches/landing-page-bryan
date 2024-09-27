@@ -188,6 +188,8 @@ nav ul {
   width: 500px;
 }
 
+/* -------------------------------- */
+
 .bg-template-grid {
   background-color: #22222275;
   z-index: -4;
@@ -196,6 +198,8 @@ nav ul {
   width: 55%;
   top: 840px;
 }
+
+/* -------------------------------- */
 
 .services {
   display: flex;
@@ -240,6 +244,21 @@ nav ul {
 .service-item img {
   max-width: 80px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .bg-template-grid {
+    display: none;
+  }
+
+  .services {
+    margin-top: 40%;
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 70%;
+  }
 }
 
 /* Modal */
@@ -318,6 +337,12 @@ nav ul {
   padding: 20px;
 }
 
+@media (max-width: 767px) {
+  .experience {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -345,15 +370,19 @@ nav ul {
   animation: bordas 8s ease-in-out 900ms infinite;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 767px) {
   .about {
     flex-direction: column;
-    max-width: 80%;
+    max-width: 70%;
+    margin-bottom: 70%;
   }
 
   .about-content h2 {
     font-size: 1.8rem;
     max-width: 80%;
+  }
+  .bg-2-template-grid {
+    display: none;
   }
 }
 
@@ -516,7 +545,13 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .contact-box {
+    flex-direction: column;
+  }
 }
 
 .contact-info-link {
@@ -617,9 +652,8 @@ form {
   letter-spacing: 1px;
   font-size: 1rem;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 0 20px;
   height: 60px;
-
   border: none;
   background-color: transparent;
   background: none; /* Remove o fundo */
