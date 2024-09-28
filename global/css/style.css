@@ -361,7 +361,6 @@ nav ul {
   gap: 55px;
   height: 100vh;
   font-size: 1rem;
-  margin-bottom: 100px;
 }
 
 .about-content {
@@ -447,8 +446,6 @@ nav ul {
 .projects {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
-  margin: 10px;
 }
 
 .projects h2 {
@@ -465,7 +462,7 @@ nav ul {
 .projects-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 60%;
+  padding: 10px;
 }
 
 .projects-grid {
@@ -473,6 +470,7 @@ nav ul {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+  padding: 10px;
 }
 
 .project-item {
@@ -511,9 +509,10 @@ nav ul {
   color: var(--cor-black-style);
 }
 
-@media (max-width: px) {
+@media (max-width: 480px) {
   .projects-header {
     padding: 20´x;
+    margin-top: 40%;
   }
   .projects h2 {
     margin-bottom: 1rem;
