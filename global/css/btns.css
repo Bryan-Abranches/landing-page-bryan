@@ -67,6 +67,13 @@
   transform: scale(0.98);
 }
 
+@media (max-width: 480px) {
+  .btn-hero {
+    width: 180px;
+    margin: 0 10px;
+  }
+}
+
 /*  */
 
 .btn-service {

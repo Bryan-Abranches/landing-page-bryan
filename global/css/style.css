@@ -150,6 +150,17 @@ nav ul {
   height: 100vh;
 }
 
+@media (max-width: 480px) {
+  .hero {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    max-width: 80%;
+  }
+}
+
 .hero-content {
   max-width: 500px;
   display: flex;
@@ -381,7 +392,7 @@ nav ul {
   .about {
     flex-direction: column;
     max-width: 70%;
-    margin-bottom: 70%;
+    margin-bottom: 100%;
   }
 
   .about-content h2 {
@@ -437,6 +448,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
+  margin: 10px;
 }
 
 .projects h2 {
@@ -756,8 +768,6 @@ footer {
 
 /* Responsive Styles */
 
-@media (max-width: 480px) {
-}
 @media screen and (max-width: 768px) {
   .copyright {
     display: none;
@@ -765,7 +775,6 @@ footer {
   .social-media {
     margin: 0 auto;
     font-size: 1.6rem;
-    justify-content: center;
   }
 
   .footer-social-midia .logo {
