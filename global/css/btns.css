@@ -160,6 +160,12 @@
   height: 70px;
 }
 
+@media (max-width: 480px) {
+  .submit-button {
+    width: 380px;
+  }
+}
+
 .submit-button:hover {
   transform: scale(1.01);
   background-color: var(--cor-black-style);

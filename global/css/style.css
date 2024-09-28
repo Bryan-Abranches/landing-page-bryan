@@ -340,6 +340,7 @@ nav ul {
 @media (max-width: 767px) {
   .experience {
     grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
   }
 }
 
@@ -368,6 +369,12 @@ nav ul {
   max-width: 100%;
   width: 500px;
   animation: bordas 8s ease-in-out 900ms infinite;
+}
+
+@media (max-width: 480px) {
+  .about img {
+    margin-bottom: 70%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -446,6 +453,7 @@ nav ul {
 .projects-header {
   display: flex;
   justify-content: space-between;
+  margin-top: 60%;
 }
 
 .projects-grid {
@@ -489,6 +497,15 @@ nav ul {
 .projects-content a {
   text-decoration: none;
   color: var(--cor-black-style);
+}
+
+@media (max-width: px) {
+  .projects-header {
+    padding: 20´x;
+  }
+  .projects h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .bg-2-template-grid {
@@ -622,8 +639,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  grid-column: 2/3;
-  grid-row: 2;
 }
 
 .form-group {
@@ -740,24 +755,22 @@ footer {
 }
 
 /* Responsive Styles */
+
+@media (max-width: 480px) {
+}
 @media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+  .copyright {
+    display: none;
+  }
+  .social-media {
+    margin: 0 auto;
+    font-size: 1.6rem;
+    justify-content: center;
   }
 
-  .hero-content {
-    margin-bottom: 20px;
-  }
-
-  .experience {
-    flex-direction: column;
-  }
-
-  .experience-item {
-    margin-bottom: 20px;
-  }
-
-  .footer-content {
-    flex-direction: column;
+  .footer-social-midia .logo {
+    display: none;
+    justify-content: center;
+    align-items: center;
   }
 }
