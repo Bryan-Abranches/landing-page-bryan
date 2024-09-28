@@ -150,14 +150,20 @@ nav ul {
   height: 100vh;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .hero-image {
+    max-width: 80%;
+  }
   .hero {
     gap: 10px;
     flex-direction: column;
   }
+}
 
-  .hero-image {
-    max-width: 80%;
+@media (max-width: 480px) {
+  .hero {
+    gap: 10px;
+    flex-direction: column;
   }
 }
 
